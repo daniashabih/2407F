@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row-reverse; */
+            /* justify-content: flex-end; */
+            /* align-items: stretch;
+            height: 200px; */
+            /* flex-wrap: wrap;
+            height: 500px; */
+            /* align-content: flex-start; */
+            background-color: yellow;
+        }
+        
+       .flex-container > div{
+            background-color: lightblue;
+            width: 85px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div style="order: 3; flex-shrink: 0;">A</div>
+        <div style="order: 4; flex-grow: 6;">B</div>
+        <div style="order: 1; flex-grow: 3;">C</div>
+        <div style="order: 2; flex-grow: 2;">D</div>
+        <!-- <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div>M</div>
+        <div>N</div>
+        <div>O</div> -->
+      
+    </div>
+</body>
+</html>

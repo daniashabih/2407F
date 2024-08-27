@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+            background-color: aqua;
+        }
+
+        .flex-container>div {
+            background-color: red;
+            width: 85px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div style="order: 4; flex-shrink: 0;">A</div>
+        <div style="order: 2; flex-grow: 3;">B</div>
+        <div style="order: 1; flex-grow: 6;">C</div>
+        <div style="order: 3; flex-grow: 2;">D</div>
+        
+    </div>
+</body>
+
+</html>
