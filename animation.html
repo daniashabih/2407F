@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: purple;
+            animation-name: first;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+            border-radius: 100%;
+        }
+        @keyframes first{
+            /* from {background-color: purple;}
+            to {background-color: pink;} */
+            0% {background-color: purple; left: 0px; top: 0px;}
+            /* 25% {background-color: aqua; left: 200px; top: 0px;} */
+            50% {background-color: blueviolet; left: 344px; top:100px;}
+            /* 75% {background-color: violet; left: 0px; top: 200px;} */
+            100% {background-color: turquoise; left: 688px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
